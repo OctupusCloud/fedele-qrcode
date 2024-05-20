@@ -1,11 +1,11 @@
 PYTHON_VER?=3.8
 NETBOX_VER?=v3.7.1
 
-NAME=netbox-qrcode
+NAME=fedele-qrcode
 
 COMPOSE_FILE=./develop/docker-compose.yml
-BUILD_NAME=netbox_qrcode
-VERFILE=./netbox_qrcode/version.py
+BUILD_NAME=fedele_qrcode
+VERFILE=./fedele_qrcode/version.py
 
 
 cbuild:
@@ -27,7 +27,7 @@ stop:
 
 destroy:
 	docker-compose -f ${COMPOSE_FILE} -p ${BUILD_NAME} down
-	docker volume rm -f ${BUILD_NAME}_pgdata_netbox_qrcode
+	docker volume rm -f ${BUILD_NAME}_pgdata_fedele_qrcode
 
 nbshell:
 	docker-compose -f ${COMPOSE_FILE} -p ${BUILD_NAME} run netbox python manage.py nbshell

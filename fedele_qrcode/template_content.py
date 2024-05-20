@@ -69,11 +69,11 @@ class QRCode(PluginTemplateExtension):
         try:
             if version.parse(settings.VERSION).major >= 3:
                 return self.render(
-                    'netbox_qrcode/qrcode3.html', extra_context={'image': img}
+                    'fedele_qrcode/qrcode3.html', extra_context={'image': img}
                 )
             else:
                 return self.render(
-                    'netbox_qrcode/qrcode.html', extra_context={'image': img}
+                    'fedele_qrcode/qrcode.html', extra_context={'image': img}
                 )
         except ObjectDoesNotExist:
             return ''

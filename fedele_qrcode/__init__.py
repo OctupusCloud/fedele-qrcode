@@ -7,8 +7,8 @@ class QRCodeConfig(PluginConfig):
     verbose_name = 'qrcode'
     description = 'Generate QR codes for the objects'
     version = __version__
-    author = 'Nikolay Yuzefovich'
-    author_email = 'mgk.kolek@gmail.com'
+    author = 'Octupus'
+    author_email = 'maxi@octupus.com'
     required_settings = []
     default_settings = {
         'with_text': True,
