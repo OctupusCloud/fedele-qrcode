@@ -22,14 +22,14 @@ def get_version(rel_path):
 
 
 setup(
-    name='netbox-qrcode',
-    version=get_version('netbox_qrcode/version.py'),
-    description='QR Code generation for netbox objects',
+    name='fedele-qrcode',
+    version=get_version('fedele_qrcode/version.py'),
+    description='QR Code generation for Fedele objects',
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url='https://github.com/k01ek/netbox-qrcode',
-    author='Nikolay Yuzefovich',
-    author_email='mgk.kolek@gmail.com',
+    url='https://github.com/OctupusCloud/fedele_qrcode.git',
+    author='Octupus',
+    author_email='maxi@octupus.com',
     packages=find_packages(),
     include_package_data=True,
     package_data={

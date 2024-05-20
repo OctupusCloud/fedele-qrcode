@@ -3,7 +3,7 @@ from .version import __version__
 
 
 class QRCodeConfig(PluginConfig):
-    name = 'netbox_qrcode'
+    name = 'fedele_qrcode'
     verbose_name = 'qrcode'
     description = 'Generate QR codes for the objects'
     version = __version__
